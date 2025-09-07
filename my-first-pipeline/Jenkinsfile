@@ -1,6 +1,5 @@
 pipeline {
-  agent {
-    docker { image 'node:16-alpine' }
+  agent { label 'jenkins-jenkins-agent'
   }
   stages {
     stage('Test') {
